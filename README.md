@@ -1,1 +1,1 @@
-revelation_server_project
+revelation_server
