@@ -1,0 +1,15 @@
+Installer websocket package :
+-> pip3 install uvicorn[standard]
+
+Start server (uvicorn :
+-> uvicorn revelation_server.django_websockets.asgi:application
+
+
+
+TEST du client via console naviguateur
+
+var ws = new WebSocket('ws://localhost:8000/');
+ws.onmessage = event => console.log(event.data)
+ws.send("ping")
+
+RESULT : doit renoyer pong
